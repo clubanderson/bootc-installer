@@ -1,0 +1,21 @@
+codecov:
+  require_ci_to_pass: false
+  notify:
+    after_n_builds: 1
+
+coverage:
+  status:
+    project:
+      default:
+        target: 80%
+        threshold: 2%
+        informational: false
+    patch:
+      default:
+        target: 70%
+        informational: true
+
+comment:
+  layout: "reach,diff,flags,files"
+  behavior: default
+  require_changes: true
